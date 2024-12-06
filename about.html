@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Tasty Bites</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .about-section {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 80px auto 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .about-text h2 {
+            color: #ff4d4d;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .values-section {
+            margin-top: 4rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .value-card h3 {
+            color: #ff4d4d;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tasty Bites</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-section">
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&auto=format&fit=crop&q=60" alt="Our Restaurant" class="about-image">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Welcome to Tasty Bites, where passion meets flavor! Established in 2024, we've been serving the community with delicious fast food made from the finest ingredients.</p>
+                <p>Our journey began with a simple idea: to create a place where people could enjoy quality fast food in a welcoming atmosphere. Today, we're proud to be your go-to destination for mouthwatering burgers, pizzas, and more.</p>
+                <p>At Tasty Bites, we believe that fast food doesn't have to compromise on quality. That's why we source our ingredients from local suppliers and prepare everything fresh daily.</p>
+            </div>
+        </div>
+
+        <div class="values-section">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Quality</h3>
+                    <p>We never compromise on the quality of our ingredients or the preparation of our food.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Service</h3>
+                    <p>Our friendly staff is dedicated to providing you with the best dining experience possible.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Community</h3>
+                    <p>We're proud to be part of the local community and actively participate in its growth.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>123 Food Street<br>Foodie City, FC 12345</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Mon-Sun: 10:00 AM - 10:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Phone: (555) 123-4567<br>Email: info@tastybites.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tasty Bites. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
